@@ -5,6 +5,7 @@ extends Control
 # var a = 2
 # var b = "text"
 signal selected(id)
+var tab_n = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -13,12 +14,10 @@ func _ready():
 
 func on_file_id_pressed(id):
 	if id == 0:
-		var name_id = $Tabs.get_tab_count()
-		add_tab(str(name_id))
-		if name_id == 0:
-			_on_Tabs_tab_changed(0)
-	if id == 2:
-		save_file()
+		add_tab(str(tab_n))
+		if $Tabs.get_tab_count() == 1:
+			_on_Tabs_tab_changed(tab_n)
+		tab_n += 1
 	
 
 func _on_GUI_popup_hide():
