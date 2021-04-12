@@ -1,7 +1,0 @@
-Create waypoint scene
-Add waypoint to edit scene
-Connect signals in Main
-Add tab and editor
-Connect tab signals
-Create custom signal for tab selected
-Emit signal on tab change
