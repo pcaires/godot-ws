@@ -39,8 +39,8 @@ theme = ExtResource( 3 )
 window_title = "File"
 resizable = true
 access = 2
-current_dir = "/Users/Pedro/Desktop/MEAer/UAV/workshop/Teste"
-current_path = "/Users/Pedro/Desktop/MEAer/UAV/workshop/Teste/"
+current_dir = "/Users/Pedro/Desktop/MEAer/UAV/workshop/godot-ws/waypoint_full"
+current_path = "/Users/Pedro/Desktop/MEAer/UAV/workshop/godot-ws/waypoint_full/"
 __meta__ = {
 "_edit_use_anchors_": false
 }
