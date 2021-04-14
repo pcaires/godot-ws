@@ -36,6 +36,10 @@ func _on_Tabs_tab_close(tab):
 	var name_id = $Tabs.get_tab_title(tab)
 	$Tabs.remove_tab(tab)
 	$TabsChild.get_node(name_id).queue_free()
+	if $Tabs.get_tab_count() != 0:
+		var id =$Tabs.get_tab_title($Tabs.get_current_tab())
+		emit_signal("selected",str(id))
+		print(id)
 
 
 func _on_Tabs_tab_changed(tab):
@@ -45,3 +49,6 @@ func _on_Tabs_tab_changed(tab):
 func save_file():
 	var id = $Tabs.get_current_tab()
 	
+func _on_Tabs_tab_clicked(tab):
+	var name_id = $Tabs.get_tab_title(tab)
+	emit_signal("selected",name_id)

@@ -136,4 +136,5 @@ __meta__ = {
 [connection signal="pressed" from="TitleBar/MinimizeButton" to="TitleBar" method="_on_MinimizeButton_pressed"]
 [connection signal="gui_input" from="ResizerPanel" to="ResizerPanel" method="_on_ResizerPanel_gui_input"]
 [connection signal="tab_changed" from="Tabs" to="." method="_on_Tabs_tab_changed"]
+[connection signal="tab_clicked" from="Tabs" to="." method="_on_Tabs_tab_clicked"]
 [connection signal="tab_close" from="Tabs" to="." method="_on_Tabs_tab_close"]

@@ -29,7 +29,5 @@ func _input(event):
 				id += 1
 
 func _on_selected(id):
-	print(get_parent().name)
-	print(get_parent().name == id)
 	get_parent().set_visible(get_parent().name == id)
 	set_disable_input(!(get_parent().name == id))
