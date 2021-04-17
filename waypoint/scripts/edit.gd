@@ -4,7 +4,7 @@ var mode = false
 var id = 0
 
 func _ready():
-	var s = $TextureRect.get_texture().get_size()*1.2
+	var s = $TextureRect.get_texture().get_size()
 	set_size(s)
 
 
